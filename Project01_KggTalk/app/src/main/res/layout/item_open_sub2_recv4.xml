@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="5dp">
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:background="@drawable/gradient"
+        >
+
+
+
+
+        <ImageView
+
+            android:scaleType="centerCrop"
+            android:id="@+id/imgv_background"
+
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:alpha="0.6"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+
+
+            <TextView
+
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="제목"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_alignEnd="@+id/tv_title"
+                    android:id="@+id/tv_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#CFCFCF"
+                    android:alpha="1"
+                    android:text="조회수"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:layout_below="@+id/tv_title"
+                    android:layout_toRightOf="@+id/tv_views"
+                    android:id="@+id/tv_date"
+                    android:text="시간"
+                    android:alpha="1"
+                    android:textColor="#CFCFCF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>
